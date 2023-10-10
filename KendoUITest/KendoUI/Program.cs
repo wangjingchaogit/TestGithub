@@ -1,11 +1,18 @@
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+//跨域代码1   ，在.net core中不能全部开启。开几个够用就行了
 builder.Services.AddCors(options =>
-options.AddPolicy("cors",
-p => p.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod().AllowCredentials()));
+options.AddPolicy("any",p => 
+p.WithMethods("GET","POST","HEAD","PUT","DELETE","OPTIONS")
+.AllowAnyOrigin()
 
+//p.AllowAnyOrigin()
+//.AllowAnyHeader()
+//.AllowAnyMethod()
+//.AllowCredentials()
+));
 
+// Add services to the container.
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 
@@ -24,11 +31,18 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+//跨域代码2
+app.UseRouting();
 
+app.UseAuthorization();  //原有代码。2和3的位置不能错
 
-app.UseAuthorization();
+//跨域代码3
+app.UseCors("any");
+app.UseEndpoints(endpoints => {
+    endpoints.MapControllers().RequireCors("any");
 
-app.UseCors();
+});
+//跨域代码 end
 
 app.MapControllers();
 
