@@ -3,8 +3,31 @@
 @{
     ViewData["Title"] = "Home page";
 }
-
+<link href="~/rendoui/newstylev4/styles/global.css" rel="stylesheet" />
+<link href="~/rendoui/newstylev4/styles/unis-kendo.css" rel="stylesheet" />
+<link href="~/rendoui/newstylev4/css/unis.css" rel="stylesheet" />
+<link href="~/rendoui/newstylev4/styles/kendomenu.css" rel="stylesheet" />
+<link href="~/rendoui/bootstrap/bootstrap-tagsinput.css" rel="stylesheet" />
+<script src="~/rendoui/newstylev4/js/jquery-1.12.4.min.js"></script>
+<script src="~/rendoui/newstylev4/gird/kendo.all.min.js"></script>
+<script src="~/rendoui/layer/layer.js"></script>
+<script src="~/rendoui/bootstrap/bootstrap.min.js"></script>
+<script src="~/rendoui/bootstrap/bootstrap-tagsinput.js"></script>
 <div class="text-center">
-    <h1 class="display-4">Welcome  111</h1>
+    <h1 class="display-4">Welcome  rendoui</h1>
+
+
+
+
+
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+<script type="text/javascript">
+    $(function () { 
+        $.get("http://localhost:5212/WeatherForecast", function (data, status) {
+            alert("数据: " + data + "\n状态: " + status);
+        });
+
+    })
+    
+</script>
