@@ -1,15 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1z0r/DHw1Uyc+NBaPRO7iDzS59je2ppdIWpN0dyvCGkB5Z7/u5wBxsJzZiuwWyoJUXlovUXRFLx885NsaHjcHw==",
+  "dgSpecHash": "+RpnR3L7BIBmPcJjF1/Xr5WmZ4eJtGR10nlAiN2T7xPMXlwDeSgb56AOv3NOGGf7UwhmifC3S4uExly8p9FPDw==",
   "success": true,
-  "projectFilePath": "D:\\Source\\TestCode\\TestGithub\\KendoUITest\\KendoUI\\KendoUI WebApi.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\wjc\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
-    "C:\\Users\\wjc\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
-    "C:\\Users\\wjc\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
-    "C:\\Users\\wjc\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
-    "C:\\Users\\wjc\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
-    "C:\\Users\\wjc\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
-  ],
+  "projectFilePath": "E:\\netTestCode\\KendoUI\\KendoUITest\\KendoUI\\KendoUI WebApi.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

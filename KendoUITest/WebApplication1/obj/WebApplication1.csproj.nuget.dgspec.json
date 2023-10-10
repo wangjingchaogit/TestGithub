@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Source\\TestCode\\TestGithub\\KendoUITest\\WebApplication1\\WebApplication1.csproj": {}
+    "E:\\netTestCode\\KendoUI\\KendoUITest\\WebApplication1\\WebApplication1.csproj": {}
   },
   "projects": {
-    "D:\\Source\\TestCode\\TestGithub\\KendoUITest\\WebApplication1\\WebApplication1.csproj": {
+    "E:\\netTestCode\\KendoUI\\KendoUITest\\WebApplication1\\WebApplication1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Source\\TestCode\\TestGithub\\KendoUITest\\WebApplication1\\WebApplication1.csproj",
+        "projectUniqueName": "E:\\netTestCode\\KendoUI\\KendoUITest\\WebApplication1\\WebApplication1.csproj",
         "projectName": "WebApplication1",
-        "projectPath": "D:\\Source\\TestCode\\TestGithub\\KendoUITest\\WebApplication1\\WebApplication1.csproj",
-        "packagesPath": "C:\\Users\\wjc\\.nuget\\packages\\",
-        "outputPath": "D:\\Source\\TestCode\\TestGithub\\KendoUITest\\WebApplication1\\obj\\",
+        "projectPath": "E:\\netTestCode\\KendoUI\\KendoUITest\\WebApplication1\\WebApplication1.csproj",
+        "packagesPath": "D:\\Program Files\\NuGetFallbackFolder",
+        "outputPath": "E:\\netTestCode\\KendoUI\\KendoUITest\\WebApplication1\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\wjc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -45,20 +49,11 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
         }
       }
     }
