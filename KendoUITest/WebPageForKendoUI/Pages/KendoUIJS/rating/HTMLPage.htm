@@ -1,0 +1,63 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <%--<link rel="stylesheet" href="css/normalize.min.css">--%>
+   <%-- <link rel="stylesheet" href="css/main.css">--%>
+	<link rel="stylesheet" href="css/examples.css">
+
+    <script type="text/javascript" src="js/vendor/jquery-1.11.2.min.js"></script>	
+    <script type="text/javascript" src="js/jquery.barrating.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+
+
+
+        });
+
+        function ratingEnable() {
+
+            $('#example-f').barrating({
+                wrapperClass: 'br-wrapper-f',
+                showSelectedRating: false,
+                theme: 0
+                //,showValues:true
+            });
+
+        }
+
+        function getVal() {
+            ratingEnable();
+            var k = $("#example-f").find("option:selected").val();
+            alert(k);
+            $('#example-f').barrating('clear');
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+   
+
+                                    <select id="example-f" name="rating" >
+											<option value=""></option>
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+										</select>  
+
+
+    </div>
+    <input id="Button1" type="button" value="button" onclick="getVal()" />
+    </form>
+</body>
+</html>
